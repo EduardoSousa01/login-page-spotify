@@ -1,48 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header-logo">
-        <div class="imagem-logo-png container"> 
-        <img src="n1/imagens/Spotify_Logo_RGB_Black.png"  alt=""> 
-    </div> 
+      <div class="imagem-logo-png container">
+        <img src="n1/imagens/Spotify_Logo_RGB_Black.png" alt="" />
+      </div>
     </header>
 
     <div class="login-tela-total container">
-        
-        <div class="conteudo-geral">
-        
+      <div class="conteudo-geral">
         <div class="btns">
-            
-        <button class="btn-fcb">
-            CONTINUAR COM O FACEBOOK
-        </button>
+          <button class="btn-fcb">CONTINUAR COM O FACEBOOK</button>
 
-        <button class="btn-apple">
-            CONTINUAR COM A APPLE
-        </button>
+          <button class="btn-apple">CONTINUAR COM A APPLE</button>
 
-        <button class="btn-google">
-            CONTINUAR COM O GOOGLE
-        </button>
+          <button class="btn-google">CONTINUAR COM O GOOGLE</button>
 
-        <button class="btn-telefone">
+          <button class="btn-telefone">
             CONTINUAR COM UM NÚMERO DE TELEFONE
-        </button>
+          </button>
+        </div>
+        <div class="separador-do-ou">
+          <div class="separador">
+            <strong class="ou">ou</strong>
+          </div>
+        </div>
+
+        <form class="form" action="post">
+            <label for="email">Endereço de e-mail ou nome de usuário</label>
+            <input type="email" name="email" placeholder="Endereço de e-mail ou nome de usuário">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" placeholder="Senha">
+            
+            <div class="esqueceu-a-senha"><a href="#">Esqueceu a senha?</a></div>
+            <div class="remember-login">
+                <div class="lgn">
+                    <label for="checkbox">
+                        <input class="check" type ="checkbox" name="lembrar-de-mim" id="check">
+                        Lembrar de mim
+                </label>
+                </div>
+                <div class="lgn">
+                    <button class="button">
+                        Entrar
+
+                    </button>
+                </div>
+                
+
+
+            </div>
+        </form>
+        <div class="separador-do-ou">
+            <div class="separador">
+            
+     
+      </div>
+      <div class="nao-tem-conta">
+          <h2>Não tem uma conta?
+              
+        </h2>
+        <button class="btn-spty">INSCREVER-SE NO SPOTIFY</button>
+      </div>
+
+      
 
     </div>
-
-    </div>
-        
-    </div>
-
-
-</body>
+  </body>
 </html>
